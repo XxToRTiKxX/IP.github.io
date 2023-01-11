@@ -26,7 +26,8 @@ body{
     background-color: black;
     color: white;
     padding: 200px 0;
-    background-image: url(img/space.jpg);
+    background-image: url(../img/space.jpg);
+
     background-repeat: no-repeat;
     background-position: top center;
     margin-top: 58px;
