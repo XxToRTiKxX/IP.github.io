@@ -9,9 +9,11 @@ function scrollFunction() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopBtn.style.display = "block";
-        scrollToTopBtn.classList.add("show"); // добавляем класс для анимации
+        scrollToTopBtn.classList.add("show"); // добавляем класс для анимации выезда
+        scrollToTopBtn.classList.remove("hide"); // убираем класс для анимации уезда
     } else {
-        scrollToTopBtn.classList.remove("show"); // убираем класс для анимации
+        scrollToTopBtn.classList.remove("show"); // убираем класс для анимации выезда
+        scrollToTopBtn.classList.add("hide"); // добавляем класс для анимации уезда
     }
 }
 
@@ -20,7 +22,7 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-// Добавляем анимацию для выезжания кнопки
+// Добавляем анимацию для выезжания и уезда кнопки
 document.addEventListener("DOMContentLoaded", function() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -28,4 +30,3 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollToTop();
     });
 });
-
