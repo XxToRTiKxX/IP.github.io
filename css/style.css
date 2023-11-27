@@ -236,7 +236,7 @@ body{
 
 /* Обновленный стиль для анимации уезда */
 #scrollToTopBtn.hide {
-    animation: hideButton 0.3s forwards; /* добавляем ключевые кадры анимации */
+    animation: hideButton 0.5s forwards; /* добавляем ключевые кадры анимации */
 }
 
 
