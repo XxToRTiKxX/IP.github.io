@@ -9,8 +9,9 @@ function scrollFunction() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopBtn.style.display = "block";
+        scrollToTopBtn.classList.add("show"); // добавляем класс для анимации
     } else {
-        scrollToTopBtn.style.display = "none";
+        scrollToTopBtn.classList.remove("show"); // убираем класс для анимации
     }
 }
 
@@ -25,13 +26,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     scrollToTopBtn.addEventListener("click", function() {
         scrollToTop();
-    });
-
-    window.addEventListener("scroll", function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.right = "20px"; /* показываем кнопку при прокрутке */
-        } else {
-            scrollToTopBtn.style.right = "-50px"; /* убираем кнопку при возвращении вверх */
-        }
     });
 });
