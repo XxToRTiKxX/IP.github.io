@@ -201,14 +201,20 @@ body{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
+    right: -50px;
+    background-color: #000; 
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%; 
     padding: 10px;
     cursor: pointer;
+    transition: right 0.3s ease-out; 
 }
+
+#scrollToTopBtn:hover {
+    background-color: #333;
+}
+
 
 
 
