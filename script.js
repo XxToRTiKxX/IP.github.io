@@ -1,5 +1,3 @@
-// Ваш JavaScript код для сайта здесь
-
 window.onscroll = function() {
     scrollFunction();
 };
@@ -18,3 +16,19 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    scrollToTopBtn.addEventListener("click", function() {
+        scrollToTop();
+    });
+
+    window.addEventListener("scroll", function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.right = "20px"; 
+        } else {
+            scrollToTopBtn.style.right = "-50px"; 
+        }
+    });
+});
