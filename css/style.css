@@ -225,7 +225,7 @@ body{
 /* Анимация уезда */
 @keyframes hideButton {
     to {
-        right: -50px;
+        right: -100px;
     }
 }
 
