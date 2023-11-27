@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollToTopBtn.addEventListener("animationend", function() {
         // Возвращаем кнопку в правый угол после анимации уезда
         if (scrollToTopBtn.classList.contains("hide")) {
-            scrollToTopBtn.style.right = "-100px";
+            scrollToTopBtn.style.right = "-50px";
         }
     });
 });
