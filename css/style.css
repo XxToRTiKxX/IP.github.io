@@ -197,23 +197,31 @@ body{
     background-color: black;
     color: white;
 }
+/* Ваши стили сайта здесь */
+
 #scrollToTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: -50px; 
-    background-color: #000; 
+    right: -50px; /* начальное положение вне экрана */
+    background-color: #000; /* черный цвет */
     color: #fff;
     border: none;
-    border-radius: 50%; 
+    border-radius: 50%; /* делаем кнопку круглой */
     padding: 10px;
     cursor: pointer;
-    transition: right 0.3s ease-out; 
+    transition: right 0.3s ease-out; /* добавляем анимацию */
 }
 
 #scrollToTopBtn:hover {
-    background-color: #333;
+    background-color: #333; /* цвет при наведении */
 }
+
+/* Обновленный стиль для анимации выезда */
+#scrollToTopBtn.show {
+    right: 20px; /* показываем кнопку при прокрутке */
+}
+
 
 
 
