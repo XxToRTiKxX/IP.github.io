@@ -201,14 +201,14 @@ body{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: -50px; /* начальное положение вне экрана */
+    right: -100px; /* начальное положение вне экрана */
     background-color: #000; /* черный цвет */
     color: #fff;
     border: none;
     border-radius: 50%; /* делаем кнопку круглой */
     padding: 10px;
     cursor: pointer;
-    transition: right 0.3s ease-out; /* добавляем анимацию */
+    transition: right 1s ease-out; /* добавляем анимацию */
 }
 
 #scrollToTopBtn:hover {
