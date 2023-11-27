@@ -1,3 +1,5 @@
+// Ваш JavaScript код для сайта здесь
+
 window.onscroll = function() {
     scrollFunction();
 };
@@ -17,6 +19,7 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+// Добавляем анимацию для выезжания кнопки
 document.addEventListener("DOMContentLoaded", function() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -26,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("scroll", function() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.right = "20px"; 
+            scrollToTopBtn.style.right = "20px"; /* показываем кнопку при прокрутке */
         } else {
-            scrollToTopBtn.style.right = "-50px"; 
+            scrollToTopBtn.style.right = "-50px"; /* убираем кнопку при возвращении вверх */
         }
     });
 });
