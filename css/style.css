@@ -197,8 +197,6 @@ body{
     background-color: black;
     color: white;
 }
-
-
 #scrollToTopBtn {
     display: none;
     position: fixed;
@@ -224,10 +222,23 @@ body{
     }
 }
 
+/* Анимация уезда */
+@keyframes hideButton {
+    to {
+        right: -50px;
+    }
+}
+
 /* Обновленный стиль для анимации выезда */
 #scrollToTopBtn.show {
     animation: showButton 0.3s forwards; /* добавляем ключевые кадры анимации */
 }
+
+/* Обновленный стиль для анимации уезда */
+#scrollToTopBtn.hide {
+    animation: hideButton 0.3s forwards; /* добавляем ключевые кадры анимации */
+}
+
 
 
 
