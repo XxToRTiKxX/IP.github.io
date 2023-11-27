@@ -197,7 +197,7 @@ body{
     background-color: black;
     color: white;
 }
-/* Ваши стили сайта здесь */
+
 
 #scrollToTopBtn {
     display: none;
@@ -217,9 +217,16 @@ body{
     background-color: #333; /* цвет при наведении */
 }
 
+/* Анимация выезда */
+@keyframes showButton {
+    to {
+        right: 20px;
+    }
+}
+
 /* Обновленный стиль для анимации выезда */
 #scrollToTopBtn.show {
-    right: 20px; /* показываем кнопку при прокрутке */
+    animation: showButton 0.3s forwards; /* добавляем ключевые кадры анимации */
 }
 
 
