@@ -10,7 +10,6 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopBtn.style.display = "block";
         scrollToTopBtn.classList.add("show"); // добавляем класс для анимации выезда
-        scrollToTopBtn.classList.remove("hide"); // убираем класс для анимации уезда
     } else {
         scrollToTopBtn.classList.remove("show"); // убираем класс для анимации выезда
         scrollToTopBtn.classList.add("hide"); // добавляем класс для анимации уезда
@@ -22,7 +21,7 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-// Добавляем анимацию для выезжания и уезда кнопки
+// Добавляем обработчик события transitionend
 document.addEventListener("DOMContentLoaded", function() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -30,11 +29,10 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollToTop();
     });
 
-    // Добавляем обработчик события окончания анимации
-    scrollToTopBtn.addEventListener("animationend", function() {
-        // Возвращаем кнопку в правый угол после анимации уезда
-        if (scrollToTopBtn.classList.contains("hide")) {
-            scrollToTopBtn.style.right = "-50px";
+    scrollToTopBtn.addEventListener("transitionend", function(event) {
+        // После завершения анимации уезда
+        if (event.propertyName === "right" && scrollToTopBtn.classList.contains("hide")) {
+            scrollToTopBtn.style.right = "-50px"; // возвращаем кнопку вправо
         }
     });
 });
