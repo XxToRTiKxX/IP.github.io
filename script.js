@@ -29,4 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollToTopBtn.addEventListener("click", function() {
         scrollToTop();
     });
+
+    // Добавляем обработчик события окончания анимации
+    scrollToTopBtn.addEventListener("animationend", function() {
+        // Возвращаем кнопку в правый угол после анимации уезда
+        if (scrollToTopBtn.classList.contains("hide")) {
+            scrollToTopBtn.style.right = "-100px";
+        }
+    });
 });
