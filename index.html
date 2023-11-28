@@ -112,6 +112,14 @@
     </footer>
 
     <!-- Подключение ваших скриптов JavaScript -->
+    button onclick="showPopup()">Открыть уведомление</button>
+
+    <div id="overlay"></div>
+
+    <div id="popup-container">
+        <div id="close-btn" onclick="closePopup()">&times;</div>
+        <p id="popup-message"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
