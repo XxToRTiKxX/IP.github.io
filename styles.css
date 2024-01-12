@@ -13,12 +13,13 @@ header {
     text-align: center;
     padding: 50px 0;
     box-sizing:paddin-box;
+}
+#header{
     background-image: url('img/background.jpg');
     background-size: cover;
     background-position: center;
     height: 150px; 
 }
-
 h1 {
     font-size: 2.5em;
 }
