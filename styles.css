@@ -1,10 +1,8 @@
-h1, h2, h3, p{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    padding: 0;
 }
 
 header {
@@ -119,7 +117,12 @@ h1 {
     padding: 50px 0;
     font-weight: bolder;
 }
-#topics #about{
+#ntext{
+    margin: 0;
+    padding: 0;
+}
+#text{
+    margin: 0;
     padding: 10px;
 }
 #prices h2{
