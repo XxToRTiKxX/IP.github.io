@@ -117,6 +117,9 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.tariff .best{
+    border-radius:10px;
+}
 #prices{
     background-color: #616161;
     text-align: center;
