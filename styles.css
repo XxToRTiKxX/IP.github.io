@@ -78,6 +78,7 @@ h1 {
     background-color: rgb(214, 199, 199);
     padding: 0;
     min-width: 150px;
+    border-radius:10px;
 
 }
 .tariff li:last-child{
@@ -113,6 +114,8 @@ h1 {
 .best .tariff-name{
     background-color: #055b73;
     padding: 48px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 #prices{
     background-color: #616161;
@@ -144,6 +147,7 @@ h1 {
     width: 100%;
     background-color: rgb(189, 43, 43);
     color: white;
+    border-radius: 10px;
 }
 a {
     color: rgb(189, 179, 43)
