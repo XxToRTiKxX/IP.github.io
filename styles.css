@@ -74,7 +74,7 @@ h1 {
     width: 30%;
     margin: 10px;
     vertical-align: middle;
-    background-color: white;
+    background-color: rgb(214, 199, 199);
     padding: 0;
     min-width: 150px;
 
@@ -85,15 +85,15 @@ h1 {
 
 }
 .tariff a{
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     padding: 12px 24px;
-    color: white;
+    color: rgb(214, 199, 199);
     text-decoration: none;
     border-radius: 12px;
 }
 .tariff a:hover{
     background-color: white;
-    color: black;
+    color: rgb(34, 34, 34);
     
 }
 .tariff li{
@@ -104,8 +104,8 @@ h1 {
     padding: 16px 0;
 }
 .tariff .tariff-name{
-    color: white;
-    background-color: black;
+    color: rgb(214, 199, 199);
+    background-color: rgb(34, 34, 34);
     font-size: 24px;
     padding: 32px 0;
 }
