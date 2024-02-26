@@ -29,7 +29,8 @@ h1 {
 }
 .class-description {
     display: flex;
-    align-items: center;/
+    align-items: center;
+    padding-top:2px;
 }
 .class-description p {
     flex: 1;
