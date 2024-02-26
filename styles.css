@@ -119,6 +119,8 @@ h1 {
     text-align: center;
     padding: 50px 0;
     font-weight: bolder;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 #ntext{
     margin: 0;
@@ -132,9 +134,11 @@ h1 {
 }
 #footer {
     background-color: #333;
-    color: #fff;
+    color: rgb(214, 199, 199);
     padding: 20px;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .footer {
     width: 100%;
