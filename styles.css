@@ -114,11 +114,15 @@ h1 {
 .best .tariff-name{
     background-color: #055b73;
     padding: 48px 0;
+
+}
+#top-radius{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.tariff .best{
-    border-radius:10px;
+#bottom-radius{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 #prices{
     background-color: #616161;
