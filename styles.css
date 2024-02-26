@@ -3,6 +3,7 @@ body{
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     padding: 0;
+    background-color: hsl(0, 18%, 85%);
 }
 
 header {
@@ -11,6 +12,7 @@ header {
     text-align: center;
     padding: 50px 0;
     box-sizing:paddin-box;
+    border-radius: 10px;
 }
 h1 {
     font-size: 2.5em;
