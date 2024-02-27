@@ -88,6 +88,7 @@ h1 {
 }
 .wrapper {
     display: flex;
+    flex-direction: row;
     padding-left: 5%;
   }
 .tariff li:last-child{
