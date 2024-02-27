@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1 id='ntext'>Создай свой сайт с нуля!</h1>
         <p id='ntext'>Участвуй в мастер-классе и освой создание сайтов</p>
         <a href="#prices" class="cta-button">Записаться на мастер-класс</a>
@@ -90,30 +90,32 @@
     </section>
     <section id="prices">
             <h2 id='ntext'>Стоимость</h2>
-            <ul class="tariff">
-                <li class="tariff-name" id="top-radius">Стартовый Взлет</li>
-                <li>Введение в основы веб-разработки: HTML, CSS, JavaScript</li>
-                <li>Полный доступ к записи мастер-класса для повторного просмотра</li>
-                <li>Сертификат участника после успешного завершения курса</li>
-                <li><p class="price">8999P</p><p class="period">за весь курс</p></li>
-                <li id="bottom-radius"><a href="#">Купить</a></li>
-            </ul>
-            <ul class="tariff best">
-                <li class="tariff-name" id="top-radius">Мастер-класс VIP</li>
-                <li>Все преимущества стандартного пакета "Творческая Экспансия"</li>
-                <li>Личная консультация с опытным веб-разработчиком</li>
-                <li>Эксклюзивный доступ к закрытой онлайн-группе для обмена опытом и поддержки</li>
-                <li><p class="price">19999P</p><p class="period">за весь курс</p></li>
-                <li id="bottom-radius"><a href="#">Купить</a></li>
-            </ul>
-            <ul class="tariff">
-                <li class="tariff-name" id="top-radius">Творческая Экспансия</li>
-                <li>Все, что включено в базовый пакет "Стартовый Взлет"</li>
-                <li>Интерактивные практические упражнения для усвоения материала</li>
-                <li>Дополнительные ресурсы и материалы для самостоятельного изучения</li>
-                <li><p class="price">12999P</p><p class="period">за весь курс</p></li>
-                <li id="bottom-radius"><a href="#">Купить</a></li>
-            </ul>
+            <div class="wrapper">
+                <ul class="tariff">
+                    <li class="tariff-name" id="top-radius">Стартовый Взлет</li>
+                    <li>Введение в основы веб-разработки: HTML, CSS, JavaScript</li>
+                    <li>Полный доступ к записи мастер-класса для повторного просмотра</li>
+                    <li>Сертификат участника после успешного завершения курса</li>
+                    <li><p class="price">8999P</p><p class="period">за весь курс</p></li>
+                    <li id="bottom-radius"><a href="#prices">Купить</a></li>
+                </ul>
+                <ul class="tariff best">
+                    <li class="tariff-name" id="top-radius">Мастер-класс VIP</li>
+                    <li>Все преимущества стандартного пакета "Творческая Экспансия"</li>
+                    <li>Личная консультация с опытным веб-разработчиком</li>
+                    <li>Эксклюзивный доступ к закрытой онлайн-группе для обмена опытом и поддержки</li>
+                    <li><p class="price">19999P</p><p class="period">за весь курс</p></li>
+                    <li id="bottom-radius"><a href="#prices">Купить</a></li>
+                </ul>
+                <ul class="tariff">
+                    <li class="tariff-name" id="top-radius">Творческая Экспансия</li>
+                    <li>Все, что включено в базовый пакет "Стартовый Взлет"</li>
+                    <li>Интерактивные практические упражнения для усвоения материала</li>
+                    <li>Дополнительные ресурсы и материалы для самостоятельного изучения</li>
+                    <li><p class="price">12999P</p><p class="period">за весь курс</p></li>
+                    <li id="bottom-radius"><a href="#prices">Купить</a></li>
+                </ul>
+            </div>
     </section>
     <footer id="footer">
         <section>
@@ -135,5 +137,7 @@
             Данный веб-сайт является лишь макетом с целью обучения и демонстрации. Вся предоставленная информация, включая контактные данные, цены, и особенности мастер-класса, могут быть вымышленными и не соответствовать реальности. Целью этого макета является предоставление образца для дизайна и структуры сайта. Пожалуйста, не предпринимайте реальные действия, основываясь на предоставленной здесь информации. Все вышеуказанные данные вымышлены и используются исключительно в учебных и творческих целях.
         </div>
     </footer>
+    <a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
+    <script type="text/JavaScript" src="script.js"></script>
 </body>
 </html>
