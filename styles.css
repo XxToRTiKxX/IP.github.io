@@ -88,7 +88,7 @@ h1 {
 }
 .wrapper {
     display: flex;
-    padding-left: 1%;
+    padding-left: 5%;
   }
 .tariff li:last-child{
     background-color: rgb(190, 188, 188);
