@@ -138,6 +138,25 @@
         </div>
     </footer>
     <a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
-    <script type="text/JavaScript" src="https://raw.githubusercontent.com/XxToRTiKxX/IP.github.io/main/script.js"></script>
+    <script type="text/JavaScript">
+        document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.getElementById("back-to-top");
+   
+    // Показать/скрыть кнопку при прокрутке страницы
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+   
+    // Плавная прокрутка при клике на кнопку
+    backToTop.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+    </script>
 </body>
 </html>
