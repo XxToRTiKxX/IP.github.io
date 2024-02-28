@@ -66,9 +66,9 @@ h1 {
 
 }
 .wrapper {
-    display: flex;
+
     flex-direction: row;
-    padding-left: 5%;
+
 }
 @media (max-width: 768px) {
     header {
